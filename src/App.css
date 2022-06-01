@@ -1,0 +1,164 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+  background-color: salmon;
+}
+h1 {
+  text-align: center;
+  color: #fff;
+  padding-top: 10px;
+  letter-spacing: 1px;
+  font-size: 40px;
+}
+h3 {
+  font-size: 30px;
+  flex: 1;
+}
+
+hr {
+  height: 4px;
+  background-color: salmon;
+  border: none;
+  margin: 10px 0;
+}
+.container {
+  padding: 15px;
+}
+
+
+.users {
+  display: flex;
+  gap: 30px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.card__item {
+  width: 280px;
+  border-radius: 15px;
+  background-color: #fff;
+  padding: 20px;
+  list-style: none;
+  max-width: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all .2s ease-in-out;
+}
+
+.card__item:hover {
+  transform: translate(0,-5px);
+}
+
+.btn {
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+  border: none;
+  background-color: salmon;
+  width: 50%;
+  margin: 30px;
+  padding: 10px 30px;
+  color: white;
+  text-transform: uppercase;
+  height: 50px;
+  border-radius: 10px;
+
+}
+
+.btn--reset {
+  font-weight: bold;
+  border: 2px solid #fff;
+  max-width: 210px;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn--reset:hover {
+  background-color: #fff;
+  color: salmon;
+}
+
+.input__users {
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  margin: 40px auto;
+  display: block;
+  border: none;
+}
+
+.main__content {
+  display: flex;
+  justify-content: space-between;
+}
+.modal {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 70px;
+  width: 30vw;
+  border-radius: 15px;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  min-width: 350px;
+  
+}
+
+.modal__container {
+
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  backdrop-filter: blur(20px) brightness(60%);  
+  top: 0;
+  left: 0;
+  z-index: 5;
+  overflow: hidden;
+}
+
+.modal__title {
+  text-align: center;
+  font-size: 40px;
+}
+
+.popup__btn {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  border: 0;
+  background: none;
+
+}
+
+.popup__btn__img {
+  cursor: pointer;
+}
+
+.main__text--popup {
+  font-size: 30px;
+}
+
+@media(max-width:700px) {
+  .main__text--popup {
+    font-size: 24px;
+  }
+  .main__content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .user {
+    align-items: center;
+  }
+  .card__item {
+    margin-top: 30px;
+  }
+}
