@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Simple-Search/static/css/main.7ff270cf.css",
+    "main.js": "/Simple-Search/static/js/main.6dc2bde1.js",
+    "index.html": "/Simple-Search/index.html",
+    "main.7ff270cf.css.map": "/Simple-Search/static/css/main.7ff270cf.css.map",
+    "main.6dc2bde1.js.map": "/Simple-Search/static/js/main.6dc2bde1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7ff270cf.css",
+    "static/js/main.6dc2bde1.js"
+  ]
+}
